@@ -9,17 +9,17 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 class EmployeesController extends Controller
 {
-    public function index()
-    {
-	$items = Employee::with('company')->paginate(10);
-	return $this->responseAPi(true, $items);
-    }
-    public function create(Request $request){
+	public function index()
+	{
+		$items = Employee::with('company')->paginate(10);
+		return $this->responseApi(true, $items);
+	}
+	public function create(Request $request){
 
 		$validator = $this->validator($request->all());
 
 		if ($validator->fails()) {
-		    return $this->responseAPi(false, $validator->errors());
+			return $this->responseAPi(false, $validator->errors());
 		}
 		$employee = Employee::create([
 			'first_name' => $request->get('first_name'),
@@ -29,18 +29,18 @@ class EmployeesController extends Controller
 			'phone' => $request->get('phone'),
 		]);
 		$employee->save();
-	return $this->responseAPi(true, $employee);
-    }
-    public function view($id){
-	$employee = Employee::with('company')->find($id);
-	return $this->responseAPi(true, $employee);
-    } 
-    public function edit(Request $request){
+		return $this->responseApi(true, $employee);
+	}
+	public function view($id){
+		$employee = Employee::with('company')->find($id);
+		return $this->responseApi(true, $employee);
+	} 
+	public function edit(Request $request){
 
 		$validator = $this->validator($request->all());
 
 		if ($validator->fails()) {
-		    return $this->responseAPi(false, $validator->errors());
+			return $this->responseAPi(false, $validator->errors());
 		}
 		$employee = Employee::find($id);
 		$employee->first_name = $request->get('first_name');
@@ -50,15 +50,15 @@ class EmployeesController extends Controller
 		$employee->phone = $request->get('phone');
 		$employee->save();
 
-	return $this->responseAPi(true, $employee);
+		return $this->responseApi(true, $employee);
 
-    }
-    public function delete($id){
+	}
+	public function delete($id){
 
 		$employee = Employee::find($id);
 		$employee->delete();
-	return $this->responseAPi(true, 'Employee deleted success!');
-    }
+		return $this->responseApi(true, 'Employee deleted success!');
+	}
 	private function validator($data){
 
 		return Validator::make($data, [

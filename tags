@@ -2,7 +2,6 @@
 Authenticate	/home/x1dan/Projects/test_laravel/app/Http/Middleware/Authenticate.php	/^class Authenticate extends Middleware$/;"	c	language:PHP
 authorize	/home/x1dan/Projects/test_laravel/app/Http/Requests/StoreCompany.php	/^    public function authorize()$/;"	f	language:PHP
 authorize	/home/x1dan/Projects/test_laravel/app/Http/Requests/StoreEmployee.php	/^    public function authorize()$/;"	f	language:PHP
-authorize	/home/x1dan/Projects/test_laravel/app/Http/Requests/StoreUser.php	/^    public function authorize()$/;"	f	language:PHP
 boot	/home/x1dan/Projects/test_laravel/app/Providers/RouteServiceProvider.php	/^    public function boot()$/;"	f	language:PHP
 casts	/home/x1dan/Projects/test_laravel/app/User.php	/^	protected $casts = [$/;"	v	language:PHP
 companies	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^			$companies = Company::all();$/;"	v	language:PHP
@@ -16,18 +15,19 @@ company	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesCo
 company	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/CompaniesController.php	/^		$company = Company::create([$/;"	v	language:PHP
 Company	/home/x1dan/Projects/test_laravel/app/Models/Company.php	/^class Company extends Model$/;"	c	language:PHP
 company	/home/x1dan/Projects/test_laravel/app/Models/Employee.php	/^	public function company(){$/;"	f	language:PHP
-company_name	/home/x1dan/Projects/test_laravel/database/seeds/Companies.php	/^	    $company_name = Str::random(6);$/;"	v	language:PHP
+company_name	/home/x1dan/Projects/test_laravel/database/seeds/Companies.php	/^		$company_name = Str::random(6);$/;"	v	language:PHP
 Controller	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Controller.php	/^class Controller extends BaseController$/;"	c	language:PHP
 create	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesController.php	/^	public function create()$/;"	f	language:PHP
 create	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^	public function create()$/;"	f	language:PHP
 create	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/CompaniesController.php	/^	public function create(Request $request){$/;"	f	language:PHP
-create	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^    public function create(Request $request){$/;"	f	language:PHP
+create	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^	public function create(Request $request){$/;"	f	language:PHP
 CreateEmployees	/home/x1dan/Projects/test_laravel/database/migrations/2020_08_19_132154_create_employees.php	/^class CreateEmployees extends Migration$/;"	c	language:PHP
 CreateUsersTable	/home/x1dan/Projects/test_laravel/database/migrations/2014_10_12_000000_create_users_table.php	/^class CreateUsersTable extends Migration$/;"	c	language:PHP
 credentials	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/UserController.php	/^		$credentials = request(['email', 'password']);$/;"	v	language:PHP
+data	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/UserController.php	/^		$data = [$/;"	v	language:PHP
 DatabaseSeeder	/home/x1dan/Projects/test_laravel/database/seeds/DatabaseSeeder.php	/^class DatabaseSeeder extends Seeder$/;"	c	language:PHP
 delete	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/CompaniesController.php	/^	public function delete($id){$/;"	f	language:PHP
-delete	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^    public function delete($id){$/;"	f	language:PHP
+delete	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^	public function delete($id){$/;"	f	language:PHP
 destroy	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesController.php	/^	public function destroy(Company $company)$/;"	f	language:PHP
 destroy	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^	public function destroy($id)$/;"	f	language:PHP
 dontFlash	/home/x1dan/Projects/test_laravel/app/Exceptions/Handler.php	/^    protected $dontFlash = [$/;"	v	language:PHP
@@ -37,14 +37,14 @@ down	/home/x1dan/Projects/test_laravel/database/migrations/2020_08_19_132154_cre
 edit	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesController.php	/^	public function edit($id)$/;"	f	language:PHP
 edit	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^	public function edit($id)$/;"	f	language:PHP
 edit	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/CompaniesController.php	/^	public function edit(Request $request, $id){$/;"	f	language:PHP
-edit	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^    public function edit(Request $request){$/;"	f	language:PHP
+edit	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^	public function edit(Request $request){$/;"	f	language:PHP
 employee	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^		$employee = Employee::create([$/;"	v	language:PHP
 employee	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^		$employee = Employee::findOrFail($id);$/;"	v	language:PHP
 employee	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^		$employee = Employee::findOrFail($id);$/;"	v	language:PHP
 employee	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^		$employee = Employee::create([$/;"	v	language:PHP
 employee	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^		$employee = Employee::find($id);$/;"	v	language:PHP
 employee	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^		$employee = Employee::find($id);$/;"	v	language:PHP
-employee	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^	$employee = Employee::with('company')->find($id);$/;"	v	language:PHP
+employee	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^		$employee = Employee::with('company')->find($id);$/;"	v	language:PHP
 Employee	/home/x1dan/Projects/test_laravel/app/Models/Employee.php	/^class Employee extends Model$/;"	c	language:PHP
 employees	/home/x1dan/Projects/test_laravel/app/Models/Company.php	/^	public function employees() {$/;"	f	language:PHP
 Employees	/home/x1dan/Projects/test_laravel/database/seeds/Employees.php	/^class Employees extends Seeder$/;"	c	language:PHP
@@ -54,8 +54,8 @@ extension	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/Companies
 extension	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesController.php	/^			$extension = $file->getClientOriginalExtension(); $/;"	v	language:PHP
 extension	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/CompaniesController.php	/^			$extension = $file->getClientOriginalExtension(); $/;"	v	language:PHP
 extension	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/CompaniesController.php	/^			$extension = $file->getClientOriginalExtension(); $/;"	v	language:PHP
-fake_company	/home/x1dan/Projects/test_laravel/database/seeds/Companies.php	/^	    $fake_company = [$/;"	v	language:PHP
-fake_employee	/home/x1dan/Projects/test_laravel/database/seeds/Employees.php	/^	    $fake_employee = [$/;"	v	language:PHP
+fake_company	/home/x1dan/Projects/test_laravel/database/seeds/Companies.php	/^		$fake_company = [$/;"	v	language:PHP
+fake_employee	/home/x1dan/Projects/test_laravel/database/seeds/Employees.php	/^		$fake_employee = [$/;"	v	language:PHP
 fake_user	/home/x1dan/Projects/test_laravel/database/seeds/Users.php	/^		$fake_user = [$/;"	v	language:PHP
 file	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesController.php	/^			$file = $request->file('logo');$/;"	v	language:PHP
 file	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesController.php	/^			$file = $request->file('logo');$/;"	v	language:PHP
@@ -82,7 +82,7 @@ index	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesCont
 index	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^	public function index()$/;"	f	language:PHP
 index	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/IndexController.php	/^	public function index(){$/;"	f	language:PHP
 index	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/CompaniesController.php	/^	public function index()$/;"	f	language:PHP
-index	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^    public function index()$/;"	f	language:PHP
+index	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^	public function index()$/;"	f	language:PHP
 index	/home/x1dan/Projects/test_laravel/app/Http/Controllers/HomeController.php	/^    public function index()$/;"	f	language:PHP
 index	/home/x1dan/Projects/test_laravel/app/Http/Controllers/StaticController.php	/^	public function index(){$/;"	f	language:PHP
 IndexController	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/IndexController.php	/^class IndexController extends Controller {$/;"	c	language:PHP
@@ -96,7 +96,7 @@ item	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/CompaniesControl
 items	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesController.php	/^		$items = Company::with('employees')->paginate(10);$/;"	v	language:PHP
 items	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^		$items = Employee::with('company')->paginate(10);$/;"	v	language:PHP
 items	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/CompaniesController.php	/^		$items = Company::with('employees')->paginate(10);$/;"	v	language:PHP
-items	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^	$items = Employee::with('company')->paginate(10);$/;"	v	language:PHP
+items	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^		$items = Employee::with('company')->paginate(10);$/;"	v	language:PHP
 Kernel	/home/x1dan/Projects/test_laravel/app/Http/Kernel.php	/^class Kernel extends HttpKernel$/;"	c	language:PHP
 login	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/UserController.php	/^	public function login(Request $request){$/;"	f	language:PHP
 logout	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/UserController.php	/^	public function logout()$/;"	f	language:PHP
@@ -119,10 +119,9 @@ routeMiddleware	/home/x1dan/Projects/test_laravel/app/Http/Kernel.php	/^    prot
 RouteServiceProvider	/home/x1dan/Projects/test_laravel/app/Providers/RouteServiceProvider.php	/^class RouteServiceProvider extends ServiceProvider$/;"	c	language:PHP
 rules	/home/x1dan/Projects/test_laravel/app/Http/Requests/StoreCompany.php	/^    public function rules()$/;"	f	language:PHP
 rules	/home/x1dan/Projects/test_laravel/app/Http/Requests/StoreEmployee.php	/^    public function rules()$/;"	f	language:PHP
-rules	/home/x1dan/Projects/test_laravel/app/Http/Requests/StoreUser.php	/^    public function rules()$/;"	f	language:PHP
-run	/home/x1dan/Projects/test_laravel/database/seeds/Companies.php	/^    public function run()$/;"	f	language:PHP
+run	/home/x1dan/Projects/test_laravel/database/seeds/Companies.php	/^	public function run()$/;"	f	language:PHP
 run	/home/x1dan/Projects/test_laravel/database/seeds/DatabaseSeeder.php	/^    public function run()$/;"	f	language:PHP
-run	/home/x1dan/Projects/test_laravel/database/seeds/Employees.php	/^    public function run()$/;"	f	language:PHP
+run	/home/x1dan/Projects/test_laravel/database/seeds/Employees.php	/^	public function run()$/;"	f	language:PHP
 run	/home/x1dan/Projects/test_laravel/database/seeds/Users.php	/^	public function run()$/;"	f	language:PHP
 show	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesController.php	/^	public function show($id)$/;"	f	language:PHP
 show	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^	public function show($id)$/;"	f	language:PHP
@@ -131,7 +130,6 @@ store	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/CompaniesCont
 store	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Admin/EmployeesController.php	/^	public function store(StoreEmployee $request)$/;"	f	language:PHP
 StoreCompany	/home/x1dan/Projects/test_laravel/app/Http/Requests/StoreCompany.php	/^class StoreCompany extends FormRequest$/;"	c	language:PHP
 StoreEmployee	/home/x1dan/Projects/test_laravel/app/Http/Requests/StoreEmployee.php	/^class StoreEmployee extends FormRequest$/;"	c	language:PHP
-StoreUser	/home/x1dan/Projects/test_laravel/app/Http/Requests/StoreUser.php	/^class StoreUser extends FormRequest$/;"	c	language:PHP
 table	/home/x1dan/Projects/test_laravel/app/Models/Company.php	/^	protected $table=  'companies';$/;"	v	language:PHP
 table	/home/x1dan/Projects/test_laravel/app/Models/Employee.php	/^	protected $table = 'employees';$/;"	v	language:PHP
 up	/home/x1dan/Projects/test_laravel/database/migrations/2014_10_12_000000_create_users_table.php	/^    public function up()$/;"	f	language:PHP
@@ -156,6 +154,6 @@ validator	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesCo
 valid_user	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/UserController.php	/^		$valid_user = Validator::make($request->all(), [$/;"	v	language:PHP
 valid_user	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/UserController.php	/^		$valid_user = Validator::make($request->all(), [$/;"	v	language:PHP
 view	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/CompaniesController.php	/^	public function view($id){$/;"	f	language:PHP
-view	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^    public function view($id){$/;"	f	language:PHP
+view	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/EmployeesController.php	/^	public function view($id){$/;"	f	language:PHP
 __construct	/home/x1dan/Projects/test_laravel/app/Http/Controllers/Api/UserController.php	/^	public function __construct()$/;"	f	language:PHP
 __construct	/home/x1dan/Projects/test_laravel/app/Http/Controllers/HomeController.php	/^    public function __construct()$/;"	f	language:PHP

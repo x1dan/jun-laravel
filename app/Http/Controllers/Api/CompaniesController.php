@@ -11,14 +11,14 @@ class CompaniesController extends Controller
 	public function index()
 	{
 		$items = Company::with('employees')->paginate(10);
-		return $this->responseAPi(true, $items);
+		return $this->responseApi(true, $items);
 	}
 	public function create(Request $request){
 
 		$validator = $this->validator($request->all());
 
 		if ($validator->fails()) {
-		    return $this->responseAPi(false, $validator->errors());
+			return $this->responseApi(false, $validator->errors());
 		}
 		$filename = '';
 		if($request->hasfile('logo')) 
@@ -35,18 +35,18 @@ class CompaniesController extends Controller
 			'website' => $request->get('website')
 		]);
 		$company->save();
-		return $this->responseAPi(true, $company);
+		return $this->responseApi(true, $company);
 	}
 	public function view($id){
 		$item = Company::with('employees')->find($id);
-		return $this->responseAPi(true, $item);
+		return $this->responseApi(true, $item);
 	}
 	public function edit(Request $request, $id){
 
 		$validator = $this->validator($request->all());
 
 		if ($validator->fails()) {
-		    return $this->responseAPi(false, $validator->errors());
+			return $this->responseApi(false, $validator->errors());
 		}
 		$filename = '';
 		if($request->hasfile('logo')) 
@@ -63,7 +63,7 @@ class CompaniesController extends Controller
 		$item->website = $request->get('website');
 		$item->save();
 
-		return $this->responseAPi(true, $item);
+		return $this->responseApi(true, $item);
 	}
 	public function delete($id){
 
@@ -71,10 +71,10 @@ class CompaniesController extends Controller
 		if ($item){
 
 			$item->delete();
-			return $this->responseAPi(true, 'Deleted success');
+			return $this->responseApi(true, 'Deleted success');
 		}
 		else {
-			return $this->responseAPi(false, 'Company not found!');
+			return $this->responseApi(false, 'Company not found!');
 		}
 	}
 	private function validator($data){
